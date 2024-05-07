@@ -31,3 +31,9 @@ When I view the recipe
 Then I can see a link with the URl to download that recipe
 
 ## Description
+
+When I load the page I am presented with a header including the name of the website. 
+I am given a search input to enter my meal preferences. When the page loads with the search data I am given a list of different recipes to view. 
+When I click on the recipe I can view a picture and instructions on how to cook the recipe. 
+I am given a breakdown of nutritional facts on that recipe. I am provided a link to that recipe so I may save it. 
+At the bottom of the page is a footer with information on the creation on this webpage.
