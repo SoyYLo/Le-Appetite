@@ -1,0 +1,63 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font family and basic styles */
+body {
+    font-family: fantasy;
+    background-color: blanchedalmond;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#searchQuery {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.recipe {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.recipe p {
+    margin-bottom: 10px;
+    color: #666;
+}
