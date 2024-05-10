@@ -29,6 +29,7 @@ const emailInput = document.getElementById("email");
 
 const submitBttn = document.getElementById("submitBttn");
 
+
 // add event listener 
 submitBttn.addEventListener('click', function (event) {
   event.preventDefault();
@@ -37,7 +38,15 @@ submitBttn.addEventListener('click', function (event) {
     email: emailInput.value.trim()
   };
 
-// save email input to local storage
-localStorage.setItem('emailData', JSON.stringify(emailData));
-console.log(emailData);
+  // save email input to local storage
+  localStorage.setItem('emailData', JSON.stringify(emailData));
+  console.log(emailData);
+});
+
+//Display "thank you or email submitted message after user subscribes to email"
+//this is not working
+
+document.addEventListener("click", function () {
+  const subText = document.getElementById("subText");
+  this.textContent = "Thank you for subscribing!";
 });
