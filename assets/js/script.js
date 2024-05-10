@@ -8,30 +8,36 @@ var btn = document.getElementById("subscribeBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
 
 // Collect email input
-const emailInput = getElementById("email");
+const emailInput = document.getElementById("email");
 
-const submitBttn = getElementById("submitBttn");
+const submitBttn = document.getElementById("submitBttn");
 
 // add event listener 
+submitBttn.addEventListener('click', function (event) {
+  event.preventDefault();
+  //create an object to store email input
+  const emailData = {
+    email: emailInput.value.trim()
+  };
 
 // save email input to local storage
-
-// assign weekly emails for recipe of the week to all emails subscribed
-
+localStorage.setItem('emailData', JSON.stringify(emailData));
+console.log(emailData);
+});
