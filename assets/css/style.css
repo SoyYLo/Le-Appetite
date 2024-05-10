@@ -2,6 +2,10 @@ body {
     background-color: white;
 }
 
+header {
+    height: 60px;
+}
+
 header h1 {
     font-size: 40px;
     font-family: fantasy;
@@ -9,11 +13,17 @@ header h1 {
 
 header h2 input {
     float: right;
-    margin-right: 100px;
+    margin-right: 150px;
     margin-top: -70px;
     width: 400px;
     border-radius: 20px;
     text-align: center;
+}
+
+#subscribeBtn {
+    float: right;
+    margin-top: -70px;
+    margin-right: 30px;
 }
 
 section {
@@ -31,6 +41,7 @@ section h3 {
 section img {
     border-style: solid;
 }
+
 
 footer h1 {
     text-align: center;
