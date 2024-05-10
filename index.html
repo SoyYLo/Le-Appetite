@@ -26,23 +26,16 @@
                 </div>
             </div>
         </h2>
-        <!-- Use checkboxes instead of a dropdown menu -->
+        <!-- created clickable links that traverse to results page displaying recipe results based on selected diet category-->
         <section>
-            <input type="checkbox" id="vegan" name="specialDiet[]" value="Vegan">
-            <label for="vegan">Vegan</label>
-
-            <input type="checkbox" id="pescetarian" name="specialDiet[]" value="Pescetarian">
-            <label for="pescetarian">Pescetarian</label>
-
-            <input type="checkbox" id="vegetarian" name="specialDiet[]" value="Vegetarian">
-            <label for="vegetarian">Vegetarian</label>
-  
-            <input type="checkbox" id="mediterranean" name="specialDiet[]" value="Mediterranean">
-            <label for="mediterranean">Mediterranean</label>
-      
-            <input type="checkbox" id="glutenFree" name="specialDiet[]" value="Gluten Free">
-            <label for="glutenFree">Gluten Free</label>
+            <a href="results.html" data-diet="vegan" class="specialDiet">Vegan</a>
+            <a href="results.html" data-diet="pescetarian" class="specialDiet">Pescetarian</a>
+            <a href="results.html" data-diet="vegetarian" class="specialDiet">Vegetarian</a>
+            <a href="results.html" data-diet="mediterranean" class="specialDiet">Mediterranean</a>
+            <a href="results.html" data-diet="glutenFree" class="specialDiet">Gluten Free</a>
         </section>
+        
+        
     </header>
 
     <section>

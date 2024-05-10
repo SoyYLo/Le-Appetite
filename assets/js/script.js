@@ -30,6 +30,17 @@ const emailInput = document.getElementById("email");
 const submitBttn = document.getElementById("submitBttn");
 
 
+//Added an event listener to each diet link. When link is clicked, it will store the diet type in the local storage
+document.addEventListener('DOMContentLoaded', function() {
+  var dietLinks = document.querySelectorAll('.specialDiet');
+  dietLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+          localStorage.setItem('selectedDiet', this.getAttribute('data-diet'));
+      });
+  });
+});
+
+
 // add event listener 
 submitBttn.addEventListener('click', function (event) {
   event.preventDefault();
