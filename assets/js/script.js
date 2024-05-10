@@ -23,3 +23,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Collect email input
+const emailInput = getElementById("email");
+
+const submitBttn = getElementById("submitBttn");
+
+// add event listener 
+
+// save email input to local storage
+
+// assign weekly emails for recipe of the week to all emails subscribed
+
