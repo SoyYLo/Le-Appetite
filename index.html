@@ -1,34 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Appetite </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Appetite</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
     <header>
         <h1>Le Appetite</h1>
         <h2>
-            <label for="name" class="searchBar"></label>
-            <input type="text" placeholder="Search">
+            <label for="search" class="searchBar">Search:</label>
+            <input type="text" id="search" placeholder="Search">
+        </h2>
+        <h2>
+            <button id="subscribeBtn">Subscribe</button>
+
+            <div id="subscribeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Subscribe Today! Get alerts on the new Recipe of the Week!</h2>
+                    <input type="email" id="email" placeholder="example.com">
+                </div>
+            </div>
+        </h2>
+        <!-- Use checkboxes instead of a dropdown menu -->
+        <section>
+            <input type="checkbox" id="vegan" name="specialDiet[]" value="Vegan">
+            <label for="vegan">Vegan</label>
+
+            <input type="checkbox" id="pescetarian" name="specialDiet[]" value="Pescetarian">
+            <label for="pescetarian">Pescetarian</label>
+
+            <input type="checkbox" id="vegetarian" name="specialDiet[]" value="Vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+  
+            <input type="checkbox" id="mediterranean" name="specialDiet[]" value="Mediterranean">
+            <label for="mediterranean">Mediterranean</label>
+      
+            <input type="checkbox" id="glutenFree" name="specialDiet[]" value="Gluten Free">
+            <label for="glutenFree">Gluten Free</label>
+        </section>
+        <!--Use checkboxes to categorize food allergies-->
+        <h2>
+            
         </h2>
     </header>
+
     <section>
         <h3>Recipe of the Week!</h3>
-        <img>
+        <img src="recipe-image.jpg" alt="Delicious recipe">
     </section>
 
     <footer>
         <h1>🥐 Made by the 4 🥐</h1>
     </footer>
 
-<script src="./assets/js/script.js"></script>
-
+    <script src="./assets/js/script.js"></script>
 </body>
-
-
 </html>
