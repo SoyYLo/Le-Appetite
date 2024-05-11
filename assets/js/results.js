@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to fetch recipe information based on recipe ID
     function fetchRecipeInformation(recipeId) {
-        const apiKey = "9cf1247e26ee4697922a9bce251e5de5Y";
+        const apiKey = "9cf1247e26ee4697922a9bce251e5de5";
         const apiUrl = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
 
         // Fetch recipe information from the API
@@ -58,11 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
         recipes.forEach(recipe => {
             const recipeElement = document.createElement("div");
             recipeElement.classList.add("recipe");
-            recipeElement.dataset.recipeId = recipe.id;
 
             const nameElement = document.createElement("h2");
             const linkElement = document.createElement("a");
-            linkElement.href = `https://spoonacular.com/recipes/${recipe.id}/information`;
+            linkElement.href = `https://spoonacular.com/recipes/${recipe.id}`;
             linkElement.textContent = recipe.title;
             linkElement.target = "_blank";
             nameElement.appendChild(linkElement);
