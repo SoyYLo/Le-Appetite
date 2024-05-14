@@ -31,12 +31,12 @@ const submitBttn = document.getElementById("submitBttn");
 
 
 //Added an event listener to each diet link. When link is clicked, it will store the diet type in the local storage
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var dietLinks = document.querySelectorAll('.specialDiet');
-  dietLinks.forEach(function(link) {
-      link.addEventListener('click', function() {
-          localStorage.setItem('selectedDiet', this.getAttribute('data-diet'));
-      });
+  dietLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      localStorage.setItem('selectedDiet', this.getAttribute('data-diet'));
+    });
   });
 });
 
@@ -61,3 +61,30 @@ document.addEventListener("click", function () {
   const subText = document.getElementById("subText");
   this.textContent = "Thank you for subscribing!";
 });
+
+
+
+// Get random recipe with picture. Recipe of the week
+window.onload = function () {
+  const apiKey = '9cf1247e26ee4697922a9bce251e5de5';
+  const recipeId = '12345'; //placeholder
+  const apiUrl = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
+
+
+  const img = document.getElementById('randomPic');
+  img.src = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
+
+  //fetch from recipe API
+  fetch(apiUrl)
+    .then(response => response.json())
+      .then(data => {
+        //Select random recipe from list
+        const recipe = data;
+
+        console.log(recipe);
+        // Display the random recipes on the page
+        //displayRecipes(recipe);
+      })
+      .catch(error => 
+        console.error("Error fetching  data:", error));
+    }
