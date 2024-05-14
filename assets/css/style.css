@@ -22,14 +22,24 @@ header h2 input {
     width: 60%
 }
 
-a {
+#link-container {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+}
+#link-container a {
+    display: block;
     color: whitesmoke;
-    float: right;
     background-color: #37474f;
     text-decoration: none;
     font-size: large;
-    margin: 5px ;
+    margin: 25px ;
     padding: 10px ;
+}
+
+#link-container a:hover {
+    background-color: #263238;
 }
 
 
@@ -43,6 +53,10 @@ a {
     height: 50px;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#subscribeBtn:hover {
+    background-color: #263238;
 }
 
 
