@@ -7,11 +7,12 @@ body, h1, h2, p, ul, li {
 /* Set font family and basic styles */
 body {
     font-family: fantasy;
-    background-color: blanchedalmond;
+    background-color: #cbc3b4;
 }
 
+
 header {
-    background-color: #333;
+    background-color: #cbc3b4;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -20,8 +21,24 @@ header {
 
 h1 {
     margin-bottom: 10px;
+    font-family: palatino;
+    font-size: 5em;
+    font-weight: lighter;
+    background-image: linear-gradient(to right, #5B7C99, #24323d, #52708a);
 }
 
+button {
+    background-color: #37474f ;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    width: 20% ;
+ 
+ }
+ 
 .search-container {
     margin-bottom: 20px;
     text-align: center;
@@ -31,7 +48,10 @@ h1 {
     padding: 10px;
     width: 200px;
     margin-right: 10px;
+    float: left;
+    width: 40%;
 }
+
 
 #results {
     display: grid;
