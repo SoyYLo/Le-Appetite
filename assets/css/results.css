@@ -9,6 +9,12 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #cbc3b4;
 }
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+}
 
 
 header {
@@ -34,15 +40,14 @@ button {
     text-align: center;
     padding: 10px 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    float: left;
+    float: center;
     width: 20% ;
+    border-radius: 5px;
    
  
  }
 
- div { text-align: center;
-display: grid;
-unicode-bidi: normal;}
+ div { text-align: center;}
  
 .search-container {
     margin-bottom: 20px;
@@ -53,8 +58,9 @@ unicode-bidi: normal;}
     padding: 10px;
     width: 75px;
     margin-right: 10px;
-    float: left;
+    float: center;
     width: 40%;
+    border-radius: 5px;
 }
 
 
