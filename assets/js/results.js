@@ -1,4 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function () {
+    const searchParams = new URLSearchParams(window.location.search);
+    const searchQuery = searchParams.get('query');
+
+    if (searchQuery) {
+        fetchRecipes(searchQuery);
+    } else {
+        // Handle case where there's no search query
+        console.error("No search query provided.");
+    }
+
     // Function to fetch recipe data from the API based on query
     function fetchRecipes(query) {
         const apiKey = "9cf1247e26ee4697922a9bce251e5de5"; 
