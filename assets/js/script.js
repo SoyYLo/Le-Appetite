@@ -63,28 +63,40 @@ document.addEventListener("click", function () {
 });
 
 
+    const apiKey = "9cf1247e26ee4697922a9bce251e5de5";
+    const randomRecipeUrl = `https://api.spoonacular.com/recipes/random?number=1&apiKey=${apiKey}`;
 
-// Get random recipe with picture. Recipe of the week
-window.onload = function () {
-  const apiKey = '9cf1247e26ee4697922a9bce251e5de5';
-  const recipeId = '12345'; //placeholder
-  const apiUrl = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
+    //get random recipe
+    fetch(randomRecipeUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const recipeId = data.recipes[0].id;
+      const recipeInfoUrl = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
 
-
-  const img = document.getElementById('randomPic');
-  img.src = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
-
-  //fetch from recipe API
-  fetch(apiUrl)
-    .then(response => response.json())
-      .then(data => {
-        //Select random recipe from list
-        const recipe = data;
-
-        console.log(recipe);
-        // Display the random recipes on the page
-        //displayRecipes(recipe);
+      //get info for specific recipe
+      fetch(recipeInfoUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response not ok');
+        }
+        return response.json();
       })
-      .catch(error => 
-        console.error("Error fetching  data:", error));
-    }
+      .then(recipedata => {
+        console.log(recipedata);
+        //Update HTML elements with recipe info
+        document.getElementById('recipe-title').textContent = recipedata.title;
+        document.getElementById('recipe-instructions').textContent = recipedata.instructions;
+        document.getElementById('recipe-image').src = recipedata.image;
+      })
+      .catch(error => {
+        console.error('Error fetching recipe info', error);
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching random info', error);
+    });
