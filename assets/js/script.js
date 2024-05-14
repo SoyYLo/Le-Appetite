@@ -63,23 +63,23 @@ document.addEventListener("click", function () {
 });
 
 
-    const apiKey = "9cf1247e26ee4697922a9bce251e5de5";
-    const randomRecipeUrl = `https://api.spoonacular.com/recipes/random?number=1&apiKey=${apiKey}`;
+const apiKey = "9cf1247e26ee4697922a9bce251e5de5";
+const randomRecipeUrl = `https://api.spoonacular.com/recipes/random?number=1&apiKey=${apiKey}`;
 
-    //get random recipe
-    fetch(randomRecipeUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      const recipeId = data.recipes[0].id;
-      const recipeInfoUrl = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
+//get random recipe
+fetch(randomRecipeUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    const recipeId = data.recipes[0].id;
+    const recipeInfoUrl = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
 
-      //get info for specific recipe
-      fetch(recipeInfoUrl)
+    //get info for specific recipe
+    fetch(recipeInfoUrl)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response not ok');
@@ -96,7 +96,11 @@ document.addEventListener("click", function () {
       .catch(error => {
         console.error('Error fetching recipe info', error);
       });
-    })
-    .catch(error => {
-      console.error('Error fetching random info', error);
-    });
+  })
+  .catch(error => {
+    console.error('Error fetching random info', error);
+
+  });
+
+
+
