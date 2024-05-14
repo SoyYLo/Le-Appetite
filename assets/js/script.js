@@ -88,10 +88,17 @@ fetch(randomRecipeUrl)
       })
       .then(recipedata => {
         console.log(recipedata);
+
+        let apiData = recipedata.instructions;
+        let cleanedData = apiData.replace(/<[^>]*>/g, "");
+        console.log("Cleaned Data:", cleanedData);
+
         //Update HTML elements with recipe info
         document.getElementById('recipe-title').textContent = recipedata.title;
-        document.getElementById('recipe-instructions').textContent = recipedata.instructions;
+        document.getElementById('recipe-instructions').textContent = cleanedData;
         document.getElementById('recipe-image').src = recipedata.image;
+
+
       })
       .catch(error => {
         console.error('Error fetching recipe info', error);
