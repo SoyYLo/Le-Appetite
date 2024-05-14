@@ -7,19 +7,27 @@ header {
 }
 
 header h1 {
+    text-align: center;
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header h2 input {
-    float: center;
+    position: fixed;
     margin-right: 150px;
-    margin-top: -70px;
+    margin-top: 5px;
     width: 400px;
     border-radius: 20px;
     text-align: center;
     height: 20px;
     width: 60%
+}
+#search {
+    width: 60%; 
+    height: 25px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
 }
 
 #link-container {
@@ -45,12 +53,13 @@ header h2 input {
 
 #subscribeBtn {
     float: right;
-    margin-top: -70px;
+    margin-top: 5px;
     margin-right: 30px;
     color: white;
     background-color: #6c765b;
     width: 30%;
     height: 50px;
+    border-radius: 5px;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -83,8 +92,9 @@ section img {
 
 footer h1 {
     text-align: center;
-    font-family: fantasy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+    font-weight: lighter;
 
 }
 
