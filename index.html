@@ -11,10 +11,15 @@
         <h1>Le Appetite</h1>
         <h2>
             <label for="search" class="searchBar"></label>
-            <input type="text" id="search" placeholder="Search">
-            <form action="results.html" method="get">
-                <label for="search" class="searchBar"></label>
-                <button type="submit">Submit</button>
+            
+            <!-- Search form -->
+<form id="searchForm" action="results.html" method="GET">
+    <input type="text" id="searchQuery" name="query" placeholder="Search for recipes">
+    <br>
+    <button type="submit">Search</button>
+</form>
+
+                
             </form>
         </h2>
         <h2>
