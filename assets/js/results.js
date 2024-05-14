@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Log the response data to the console
                 console.log("Response data:", data);
                 
+                
                 // Display the fetched recipes on the page
                 displayRecipes(data.results);
             })
@@ -61,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const nameElement = document.createElement("h2");
             const linkElement = document.createElement("a");
-            linkElement.href = `https://spoonacular.com/recipes/${recipe.id}`;
+            linkElement.href = `https://spoonacular.com/${recipe.title}-${recipe.id}`;
             linkElement.textContent = recipe.title;
             linkElement.target = "_blank";
             nameElement.appendChild(linkElement);
