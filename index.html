@@ -9,6 +9,9 @@
 <body>
     <header>
         <h1>Le Appetite</h1>
+
+
+        <div id="search-container">  
         <h2>
             <label for="search" class="searchBar"></label>
             
@@ -18,7 +21,7 @@
     <br>
     <button type="submit">Search</button>
 </form>
-
+</div>
                 
             </form>
         </h2>
@@ -30,11 +33,13 @@
                     <span class="close">&times;</span>
                     <h2>Subscribe Today! Get alerts on the new Recipe of the Week!</h2>
                     <input type="email" id="email" placeholder="example.com">
-                    <button id="submitBttn">Submit</button>
+                    <button id="submitBttn" onclick="showPopup()">Submit</button>
                     <h2 id="subText"></h2>
                 </div>
             </div>
         </h2>
+
+        <div id =link-container>
         <!-- created clickable links that traverse to results page displaying recipe results based on selected diet category-->
         <section>
             <a href="results.html?diet=vegan" class="specialDiet">Vegan</a>
@@ -44,7 +49,7 @@
             <a href="results.html?diet=glutenFree" class="specialDiet">Gluten Free</a>
         </section>
         
-        
+    </div>
     </header>
 
     <section>
