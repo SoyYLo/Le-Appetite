@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to fetch recipe data from the API based on query and diet
     function fetchRecipes(query, diet) {
-        const apiKey = "9cf1247e26ee4697922a9bce251e5de5"; 
+        const apiKey = "5308045043ee404c9ee00bb2da455da9"; 
         let apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=20`;
 
         if (query) {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to fetch recipe information based on recipe ID
     function fetchRecipeInformation(recipeId) {
-        const apiKey = "9cf1247e26ee4697922a9bce251e5de5";
+        const apiKey = "5308045043ee404c9ee00bb2da455da9";
         const apiUrl = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`;
 
         // Fetch recipe information from the API

@@ -25,9 +25,18 @@ window.onclick = function (event) {
 }
 
 // Collect email input
-const emailInput = document.getElementById("email");
+//const emailInput = document.getElementById("email");
 
 const submitBttn = document.getElementById("submitBttn");
+//when the user submits email, the website will display a message
+function showPopup(){
+  var email = document.getElementById("email").value;
+  if(email){
+    alert('Thank you for subscribing!');
+  } else {
+    alert('Please enter a valid email address.');
+  }
+}
 
 
 //Added an event listener to each diet link. When link is clicked, it will store the diet type in the local storage
@@ -63,7 +72,7 @@ document.addEventListener("click", function () {
 });
 
 
-const apiKey = "9cf1247e26ee4697922a9bce251e5de5";
+const apiKey = "5308045043ee404c9ee00bb2da455da9";
 const randomRecipeUrl = `https://api.spoonacular.com/recipes/random?number=1&apiKey=${apiKey}`;
 
 //get random recipe
