@@ -3,37 +3,54 @@
 ## User Story
 
 As a User I want a webpage that can provide a list of recipes filtered by the users meal needs
-So that I can find a specialized diet catered to the specific user.
+So that I can find a specialized diet catered to my specific food preferences.
 
 ## Acceptance Criteria
 
-Given I'm a hungry user
-When I load the recipe search engine
-Then I am able to search recipes by using a unique key word based on my diet needs.
+Given the user loads Le Appetite website
+When the user searches a meal type or clicks on the recommended meal type links
+Then the user is able to view recipes that include the title and the picture for that recipe.
 
-It is done 
+Given the user wants to subscribe to our website
+When the user clicks on "Subscribe" and enters their email
+Then they will signed up to receive the recipe of the week via email.
+
+## It is Done 
+
 When I search for a meal type
-Then I am presented with meal categories to choose from (meat, vegetarian, vegan)
+Then I am redirected to a results page with meal recipes to choose from
 
-When I select a meal category
-Then I am presented with another set of categories by special diet (low calories, protein, carb, keto)
+When I select a meal recipe
+Then I am taken to the original recipe source with intrsuctions and ingredients needed to cook that meal as well as the recipes nutritional facts
 
-When I select the select the special diet category 
-Then I am able to filter out any food allergies 
-
-When I am given the filtered recipes
-Then I am presented with the recipes nutritional facts (Picture, calories, ingredients, total cook time)
-
-When I click the recipe of my choice
+When I view the recipe of my choice
 Then I am given all required recipe intructions (prep time, cook time, measurements,)
 
-When I view the recipe 
-Then I can see a link with the URl to download that recipe
 
 ## Description
 
 When I load the page I am presented with a header including the name of the website. 
-I am given a search input to enter my meal preferences. When the page loads with the search data I am given a list of different recipes to view. 
-When I click on the recipe I can view a picture and instructions on how to cook the recipe. 
-I am given a breakdown of nutritional facts on that recipe. I am provided a link to that recipe so I may save it. 
-At the bottom of the page is a footer with information on the creation on this webpage.
+Under the header I am presented with a search bar where I can enter my meal choice.
+Followed by the search bar are 5 top recommended meal categories to choose from as well.
+In the center of the page I am presented with the recipe of the week.
+Fully included with the Title, Picture and Instructions for that recipe.
+Then I am presented with a subscribe button.
+When I click to subscribe, a modal pops up for me to enter my email and be subscribed to receive the recipe of the week via email.
+There will be a footer after the subscribe button to indicate that is the end of the page with a little message from the creators.
+
+When I search or click on a meal type
+I am taken to a second page with all the recipe results for that meal type included with the title and a picture
+There will be another search bar provided so I can edit my search any time
+When I click on a recipe
+I am taken to a page where I am given a breakdown of instructions on that recipe. 
+
+## Link
+
+## Screenshot
+
+## Developers 
+
+Brian Sanchez
+Ruby Hill 
+Yahvannel Lopez
+Courtney Conde
