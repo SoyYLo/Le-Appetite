@@ -74,7 +74,7 @@ document.addEventListener("click", function () {
 });
 
 
-const apiKey = "db5b94bdea38400891f84980c7b0c1e7";
+const apiKey = "04370d6f3fe642c5824018d3e9c9b22e";
 const randomRecipeUrl = `https://api.spoonacular.com/recipes/random?number=1&apiKey=${apiKey}`;
 
 //get random recipe
