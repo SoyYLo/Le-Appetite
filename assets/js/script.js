@@ -53,14 +53,16 @@ document.addEventListener('DOMContentLoaded', function () {
 // add event listener 
 submitBttn.addEventListener('click', function (event) {
   event.preventDefault();
+ 
+ 
   //create an object to store email input
   const emailData = {
     email: emailInput.value.trim()
   };
 
   // save email input to local storage
-  localStorage.setItem('emailData', JSON.stringify(emailData));
-  console.log(emailData);
+  localStorage.setItem('email', JSON.stringify(email));
+  console.log(email);
 });
 
 //Display "thank you or email submitted message after user subscribes to email"

@@ -25,23 +25,11 @@
                 
             </form>
         </h2>
-        <h2>
-            <button id="subscribeBtn">Subscribe</button>
-
-            <div id="subscribeModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Subscribe Today! Get alerts on the new Recipe of the Week!</h2>
-                    <input type="email" id="email" placeholder="example.com">
-                    <button id="submitBttn" onclick="showPopup">Submit</button>
-                    <h2 id="subText"></h2>
-                </div>
-            </div>
-        </h2>
+      
 
         <div id =link-container>
         <!-- created clickable links that traverse to results page displaying recipe results based on selected diet category-->
-        <section>
+        <section class="links">
             <a href="results.html?diet=vegan" class="specialDiet">Vegan</a>
             <a href="results.html?diet=pescetarian" class="specialDiet">Pescetarian</a>
             <a href="results.html?diet=vegetarian" class="specialDiet">Vegetarian</a>
@@ -60,6 +48,19 @@
             <p id="recipe-instructions"></p>
         </div>
     </section>
+    <h2>
+        <button id="subscribeBtn">Subscribe</button>
+
+        <div id="subscribeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Subscribe Today! Get alerts on the new Recipe of the Week!</h2>
+                <input type="email" id="email" placeholder="example.com">
+                <button id="submitBttn" onclick="showPopup()">Submit</button>
+                <h2 id="subText"></h2>
+            </div>
+        </div>
+    </h2>
 
     <footer>
         <h1>🥐 Made by the 4 🥐</h1>
