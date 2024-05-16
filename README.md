@@ -46,11 +46,29 @@ I am taken to a page where I am given a breakdown of instructions on that recipe
 
 ## Link
 
+https://soyylo.github.io/Le-Appetite/
+
 ## Screenshot
+
+![First Page](<Screenshot 2024-05-15 at 9.29.48 PM.png>)
+
+![Second Page](<Screenshot 2024-05-15 at 9.31.38 PM.png>)
+
+## Documentation Used
+
+https://spoonacular.com/food-api/docs#Get-Random-Recipes
+
+https://javascript.plainenglish.io/create-a-subscription-newsletter-using-javascript-html-and-css-e98391d7156f
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+https://codepen.io/enxaneta/full/adLPwv/
 
 ## Developers 
 
-Brian Sanchez
-Ruby Hill 
-Yahvannel Lopez
+Brian Sanchez,
+Ruby Hill,
+Yahvannel Lopez,
 Courtney Conde
