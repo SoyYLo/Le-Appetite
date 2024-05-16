@@ -39,8 +39,7 @@ header h2 input {
     border-radius: 5px; 
 }
 #link-container {
-    display: inline;
-    float: center;
+    display: inline-block;
     margin-top: 10px;
     margin-left: 50px;
     margin-right: 50px;
@@ -51,7 +50,7 @@ header h2 input {
     color: whitesmoke;
     background-color: #37474f;
     font-size: large;
-    margin: 65px ;
+    margin: 0.5vh 6vw;
     padding: 10px ;
     border-radius: 5px;
 }
@@ -61,9 +60,7 @@ header h2 input {
 }
 
 #subscribeBtn {
-    position: fixed;
     bottom: 0;
-    left: 60%;
     margin-top: 5px;
     margin-right: 30px;
     color: white;
@@ -89,7 +86,9 @@ button {
 }
 
 
-section {
+section.links {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-color: #cbc3b4;
 }
