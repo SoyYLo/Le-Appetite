@@ -10,7 +10,6 @@ body {
     background-color: #cbc3b4;
 }
 .flex-container {
-    display: flex;
     justify-content: center;
     flex-direction: row;
     height: 100vh;
@@ -66,9 +65,8 @@ button {
 
 #results {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    float: left;
 }
 
 
@@ -79,7 +77,6 @@ a { color: #5B7C99;}
     padding: 15px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    float: left;
 }
 
 .recipe img {
